@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11761" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dic-de-tUW">
+                                <rect key="frame" x="37" y="461" width="177" height="99"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEY-tO-6hk">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="33"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8N-yO-cgC">
+                                                <rect key="frame" x="0.0" y="0.0" width="59" height="33"/>
+                                                <color key="backgroundColor" red="0.99725219279999999" green="1" blue="0.98730435540000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="59" id="gQO-Oz-Miy"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="north_west"/>
+                                                <connections>
+                                                    <action selector="animateBall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6tv-51-q8F"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdY-zd-yT7">
+                                                <rect key="frame" x="59" y="0.0" width="59" height="33"/>
+                                                <color key="backgroundColor" red="0.99725219279999999" green="1" blue="0.98730435540000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button" image="north"/>
+                                                <connections>
+                                                    <action selector="animateBall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zp1-Do-sJK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJR-Ai-8Bu">
+                                                <rect key="frame" x="118" y="0.0" width="59" height="33"/>
+                                                <color key="backgroundColor" red="0.99725219279999999" green="1" blue="0.98730435540000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button" image="north_east-1"/>
+                                                <connections>
+                                                    <action selector="animateBall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ks5-a3-Aw3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="QdY-zd-yT7" firstAttribute="centerX" secondItem="hEY-tO-6hk" secondAttribute="centerX" id="pHU-U1-gTG"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEV-Q7-cI8">
+                                        <rect key="frame" x="0.0" y="33" width="177" height="33"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpH-fP-Ezd">
+                                                <rect key="frame" x="0.0" y="0.0" width="59" height="33"/>
+                                                <color key="backgroundColor" red="0.99725219279999999" green="1" blue="0.98730435540000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="59" id="x0L-JR-fBx"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="west"/>
+                                                <connections>
+                                                    <action selector="animateBall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="po0-zm-4Cv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZH-DS-cXJ">
+                                                <rect key="frame" x="59" y="0.0" width="59" height="33"/>
+                                                <color key="backgroundColor" red="0.99725219279999999" green="1" blue="0.98730435540000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="animateBall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ybi-dY-gh1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZg-3O-nBj">
+                                                <rect key="frame" x="118" y="0.0" width="59" height="33"/>
+                                                <color key="backgroundColor" red="0.99725219279999999" green="1" blue="0.98730435540000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button" image="east"/>
+                                                <connections>
+                                                    <action selector="animateBall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i46-wn-4Yp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="BZH-DS-cXJ" firstAttribute="centerX" secondItem="lEV-Q7-cI8" secondAttribute="centerX" id="xQi-aE-zNr"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPG-6l-hRL">
+                                        <rect key="frame" x="0.0" y="66" width="177" height="33"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="107" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nc5-wh-c0m">
+                                                <rect key="frame" x="0.0" y="0.0" width="59" height="33"/>
+                                                <color key="backgroundColor" red="0.99725219279914812" green="1" blue="0.98730435536969963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="59" id="dVZ-e6-Mv5"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="south_west"/>
+                                                <connections>
+                                                    <action selector="animateBall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D7G-Uk-Olk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="108" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cF-Ia-Bqy">
+                                                <rect key="frame" x="59" y="0.0" width="59" height="33"/>
+                                                <color key="backgroundColor" red="0.99725219279914812" green="1" blue="0.98730435536969963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button" image="south"/>
+                                                <connections>
+                                                    <action selector="animateBall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zfh-O3-i4N"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="109" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGU-K0-vec">
+                                                <rect key="frame" x="118" y="0.0" width="59" height="33"/>
+                                                <color key="backgroundColor" red="0.99725219279914812" green="1" blue="0.98730435536969963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button" image="south_east"/>
+                                                <connections>
+                                                    <action selector="animateBall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mau-8E-5Tj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="8cF-Ia-Bqy" firstAttribute="centerX" secondItem="tPG-6l-hRL" secondAttribute="centerX" id="1sn-Sc-KMh"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hEY-tO-6hk" firstAttribute="leading" secondItem="lEV-Q7-cI8" secondAttribute="leading" id="02H-AG-CX0"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="isv-yE-0jz">
+                                <rect key="frame" x="285" y="461" width="62" height="96"/>
+                                <subviews>
+                                    <button opaque="NO" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUY-UB-XwS">
+                                        <rect key="frame" x="0.0" y="0.0" width="62" height="48"/>
+                                        <color key="backgroundColor" red="0.99725219279914812" green="1" blue="0.98730435536969963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button" image="zoom_in"/>
+                                        <connections>
+                                            <action selector="animateBall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Dp-NG-gvX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaA-al-fVx">
+                                        <rect key="frame" x="0.0" y="48" width="62" height="48"/>
+                                        <color key="backgroundColor" red="0.99725219279999999" green="1" blue="0.98730435540000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button" image="zoom_out"/>
+                                        <connections>
+                                            <action selector="animateBall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xew-rW-gb3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="G5h-Ei-8Xp">
+                                <rect key="frame" x="149" y="183" width="77" height="72"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="8Ds-0y-D46"/>
+                                    <constraint firstAttribute="width" constant="77" id="X8U-Lb-b8k"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.71597398477157359" green="0.71597398477157359" blue="0.71597398477157359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                        <constraints>
+                            <constraint firstItem="G5h-Ei-8Xp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="163" id="AWU-y2-fuk"/>
+                            <constraint firstItem="Dic-de-tUW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="GTh-kM-YRR"/>
+                            <constraint firstItem="Dic-de-tUW" firstAttribute="top" secondItem="isv-yE-0jz" secondAttribute="top" id="H5E-mr-Hvf"/>
+                            <constraint firstItem="G5h-Ei-8Xp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UuN-YB-KHe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dic-de-tUW" secondAttribute="bottom" constant="107" id="Y94-8l-Zq3"/>
+                            <constraint firstItem="isv-yE-0jz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="441" id="Zui-7S-3Hz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="isv-yE-0jz" secondAttribute="bottom" constant="110" id="fHf-Cu-OAh"/>
+                            <constraint firstItem="isv-yE-0jz" firstAttribute="leading" secondItem="Dic-de-tUW" secondAttribute="trailing" constant="71" id="l1c-0B-ko6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="isv-yE-0jz" secondAttribute="trailing" constant="12" id="ndJ-AG-rI6"/>
+                            <constraint firstItem="isv-yE-0jz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="285" id="rVm-Ff-Wa4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Ballimage" destination="G5h-Ei-8Xp" id="aVw-FQ-fzb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ball" width="512" height="512"/>
+        <image name="east" width="512" height="512"/>
+        <image name="north" width="512" height="512"/>
+        <image name="north_east-1" width="512" height="512"/>
+        <image name="north_west" width="512" height="512"/>
+        <image name="south" width="512" height="512"/>
+        <image name="south_east" width="512" height="512"/>
+        <image name="south_west" width="512" height="512"/>
+        <image name="west" width="512" height="512"/>
+        <image name="zoom_in" width="512" height="512"/>
+        <image name="zoom_out" width="512" height="512"/>
+    </resources>
+</document>
